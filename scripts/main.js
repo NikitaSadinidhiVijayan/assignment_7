@@ -8,6 +8,8 @@
     var FormHandler = App.FormHandler;
     var Validation = App.Validation;
 
+    //var Validation2 = App.Validation2;
+
     var CheckList = App.CheckList;
     var myTruck = new Truck('ncc-1701', new DataStore());
     window.myTruck = myTruck;
@@ -19,6 +21,7 @@
         checkList.addRow.call(checkList, data);
     });
     formHandler.addInputHandler(Validation.isCompanyEmail);
-
+    formHandler.addInput(Validation.isDecaf);
+    //formHandler.addIn(Validation2.isDecaf);
 
 })(window);
