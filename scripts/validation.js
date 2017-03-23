@@ -8,7 +8,7 @@
         },
         isDecaf: function(textinput, range) {
             //console.log(textinput === 'decaf');
-            if (textinput === 'decaf' && range >= 20) {
+            if (/decaf/.test(textinput) && range >= 20) {
                 return false;
             } else {
                 return true;
